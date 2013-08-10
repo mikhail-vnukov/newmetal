@@ -1,0 +1,49 @@
+/**
+*
+*	Project: newmetal
+*	-------------------------------------
+*	The best project ever.
+* 
+*   Project version:
+*   v0.1.0
+*    
+*   Author(s):
+*   - newmetal ( mikhail.vnukov@gmail.com )
+*
+*   Table of contents
+*   -------------------------------------
+*
+*   Contents................. You're reading it
+*   Base..................... Contains a basic reset and guidelines
+*   - Reset.................. Eric Meyer's 2.0 reset for a full browser reset
+*   - Includes............... Includes of the grid and other external files
+*   - HTML................... Styling of the basic HTML tags
+*   Layout................... Basic positioning of the main elements
+*   Modules.................. Styling specific pieces of content
+*   States................... JS and CSS states
+*
+*/
+
+/* -------------------------------------- *\
+    $BASE
+\* -------------------------------------- */
+
+// Clear the working stage
+@import "reset";
+
+// Import the base settings
+@import "base";
+@import "params";
+
+/* -------------------------------------- *\
+    $LAYOUT
+\* -------------------------------------- */
+@import "layout";
+
+/* -------------------------------------- *\
+    $MODULES
+\* -------------------------------------- */
+@import "modules/header";
+
+
+@import "temporary";

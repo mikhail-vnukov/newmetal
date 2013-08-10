@@ -1,0 +1,56 @@
+/* -------------------------------------- *\
+    $BASE
+\* -------------------------------------- */
+@import "params";
+
+* {
+  vertical-align: middle;
+}
+
+* {
+  position: relative;
+}
+
+* {
+  background-repeat: no-repeat;
+}
+
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+body {
+	background: url('../images/blueberry-back.jpg') repeat;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.content {
+	background: #fff9df;
+}
+
+.clear:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.control {
+	color: $white;
+
+	a {
+		color: $white;		
+	}
+}
+
+

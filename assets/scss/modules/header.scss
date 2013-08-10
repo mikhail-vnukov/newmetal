@@ -1,0 +1,74 @@
+$nav-visual-height: 55px;
+$nav-top-shadow-height: 5px;
+$nav-bottom-shadow-height: 12px;
+$nav-height: $nav-visual-height + $nav-top-shadow-height + $nav-bottom-shadow-height;
+
+$divider-height:  33px;
+
+header {
+	background-color: green;
+
+	nav {
+		height: $nav-height;
+		margin-top: -$nav-top-shadow-height;
+		margin-bottom: -$nav-bottom-shadow-height;
+		position: relative;
+		width: 100%;
+		background: url('../images/middle-ribbon-small.png') repeat-x;
+
+		ul {
+			line-height: $nav-visual-height + 10px; //FIXME: why 10px ?
+			left: 10px;
+			font-family: 'PT Sans Caption', sans-serif;
+			text-transform: uppercase;
+			font-size: 13px;
+			text-shadow: -2px -2px rgba(0,0,0,0.26);
+			
+			li:after {
+				content: "";
+				background-image: url("../images/header/divider.png");
+				display: inline-block;
+				width: 3px;
+				height: 33px;
+				margin: 0 9px;
+				vertical-align: middle;
+
+			}
+
+			li:last-child:after {
+				content: none;
+			}
+		}
+	}
+}
+
+nav li {
+	display: inline;
+}
+
+
+.logo {
+	float: left;
+	width: 268px;
+	height: 268px;
+	margin-right: -42px; //right shadow
+	margin-left: -47px; // left shadow
+	margin-top: -9px; // top shadow
+	margin-bottom: -8px; // bottom shadow
+	background: url('../images/logo.png');
+	z-index: 2;
+}
+
+.sublogo {
+	float: right;
+	width: 163px;
+	height: 140px;
+	margin: -3px; // shadow around
+
+	background: url('../images/sublogo.png');
+	z-index: 2;
+	padding-top: 10px;
+	padding-left: 24px;
+}
+
+
