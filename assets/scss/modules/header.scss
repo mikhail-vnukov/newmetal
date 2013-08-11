@@ -53,20 +53,24 @@ $img-header-path: #{$img-path}/header;
 	background-color: $white;
 }
 
-header {
+.header {
 	border-radius: 5px;
 	padding: 2px $content-padding 0;
 	background: url('#{$img-path}/red-texture.jpg') repeat;	
+
+	h1 {
+		font-size: 32px;
+		left: 50px;
+		color: $red;
+		padding-right: 20px;
+		margin-top: 93px;
+		width: 26em;
+		text-align: left;
+	}
+
 }
 
 
-.title {
-	font-size: 32px;
-	left: 50px;
-	color: $red;
-	padding-right: 20px;
-	margin-top: 93px;
-}
 
 /** Ribbon */
 	.ribbon {
@@ -122,6 +126,14 @@ header {
 	padding: 10px 6px 0;
 	text-align: center;
 	font-size: 14px;
+
+	color: $white;
+	font-family: $body-copy;
+
+	a {
+		color: inherit;
+
+	}
 }
 
 

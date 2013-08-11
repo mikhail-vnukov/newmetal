@@ -32,17 +32,30 @@ body {
 	padding-top: 10px;
 	background: url('../images/blueberry-back.jpg') repeat;
 	font-family: $body-copy;
+	color: $blue;
 }
 
-.headlines {
+h1, h2, header, .headlines {
 	font-family: $title-copy;
+}
+
+h1 {
+	color: $red;
+	text-align: center;
+	font-size: 2em;
+	width: 26em;
+	margin: 0 auto;
 }
 
 section {
 	margin: 0 $content-padding;
 	background-color: $white;
+	padding: 20px 0;
 }
 
+strong {
+	color: $red;
+}
 .clear:after {
 	content: ".";
 	display: block;
@@ -57,6 +70,28 @@ section {
 	a {
 		color: $white;		
 	}
+}
+
+.good-button {
+	width: 204px;
+	height: 70px;
+	padding: 0 3em;
+	//bottom shadow
+	padding-bottom: 10px;
+	margin-bottom: -10px; 
+}
+
+.buy-good-button {
+	@extend .good-button;
+
+	background-image: url(#{$img-path}/red-button.png);
+
+}
+
+.info-good-button {
+	@extend .good-button;
+	background-image: url(#{$img-path}/blue-button.png);
+
 }
 
 

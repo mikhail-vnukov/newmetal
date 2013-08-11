@@ -1,0 +1,22 @@
+.feedback {
+	padding-top: 50px;
+}
+
+.laced {
+	background: url(#{$img-path}/pattern-back.png) repeat;
+
+}
+
+.laced:before {
+	@include pseudo-base(13px);
+	background: url('#{$img-path}/divisor-up.png') repeat-x;
+	background-color: $white;
+
+}
+
+.laced:after {
+	@include pseudo-base(13px);
+
+	background: url('#{$img-path}/divisor-down.png') repeat-x;	
+	background-color: $white;
+}

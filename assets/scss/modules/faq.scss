@@ -1,0 +1,178 @@
+.faq {
+	article {
+		
+		margin: 60px 90px;
+		min-height: 358px;
+		text-align: center;
+
+		header {
+			margin-bottom: 30px;
+			font-size: 1.5em;
+			text-align: center;
+			color: $red;
+		}
+
+		img, button, .answer-bubble, .question-bubble {
+			position: absolute;
+		}
+
+		img, button {
+			bottom: 0;
+		}
+
+		.question {
+			left: 0;
+		}
+
+		.answer {
+			right: 0;
+		}
+
+		.question-bubble, .answer-bubble {
+			background-size: cover;
+		}
+		.question-bubble {
+			background-image: url(#{$img-path}/faq/bubble.png);
+			padding-top: 16px;
+
+			width: 200px;
+			height: 132px;
+			left: 130px;
+		}
+
+		.answer-bubble {
+			background-image: url(#{$img-path}/faq/answer-bubble.png);
+			padding: 0 15px;
+			padding-top: 22px;
+
+			width: 244px;
+			height: 144px;
+			right: 194px;
+			bottom: 40px;
+
+		}
+
+		img {
+			// display: inline-block;
+		}
+
+		button {
+			left: 28%;
+			width: 235px;
+			height: 48px;
+			padding-bottom: 2px;
+			padding-left: 50px;
+			padding-right: 10px;
+			background-image: url(#{$img-path}/faq/button.png);
+			color: $white;
+		}
+
+		button.order {
+			background-image: url(#{$img-path}/faq/order-button.png);
+
+		}
+
+	}
+
+	.question1 {
+		.question-bubble {
+			width: 200px;
+			height: 132px;
+			left: 130px;
+		}
+
+		.answer-bubble {
+			width: 244px;
+			height: 144px;
+			right: 194px;
+			bottom: 40px;
+
+		}
+	}
+
+	.question2 {
+		.question-bubble {
+			width: 263px;
+			height: 172px;
+			left: 130px;
+			padding-top: 40px;
+			top: 40px;
+		}
+
+		.answer-bubble {
+			width: 206px;
+			height: 122px;
+			right: 194px;
+			bottom: 40px;
+			padding-top: 26px;
+		}
+	}
+	.question3 {
+		.question-bubble {
+			width: 299px;
+			height: 199px;
+			left: 110px;
+			padding: 46px 26px 9px 20px;
+		}
+
+		.answer-bubble {
+			width: 246px;
+			right: 194px;
+			bottom: 40px;
+			padding-top: 36px;
+
+		}
+	}
+	.question4 {
+		.question-bubble {
+			width: 219px;
+			height: 146px;
+			left: 130px;
+			padding-top: 29px;
+		}
+
+		.answer-bubble {
+			width: 219px;
+			height: 129px;
+			right: 224px;
+			bottom: 40px;
+			padding-top: 30px;
+
+		}
+	}
+}
+
+.finish {
+	img {
+		display: inline-block;
+		float: left;
+		display: inline-block;
+		margin-left: 45px;
+	}
+
+	button {
+		color: $white;
+		padding-left: 47px;
+		padding-right: 12px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		height: 45px;
+		width: 135px;
+		background-image: url(#{$img-path}/faq/footer-up.png);
+
+	}
+}
+.final-advise {
+	background-image: url(#{$img-path}/faq/faq-final.png);
+	background-size: cover;
+	display: inline-block;
+	margin-left: 30px;
+	width: 529px;
+	height: 193px;
+	padding-left: 160px;
+	padding-top: 43px;
+	font-size: 1.5em;
+	color: $blue;
+
+}

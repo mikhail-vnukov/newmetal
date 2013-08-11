@@ -33,27 +33,25 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block; }
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-audio,
-canvas,
-video {
-  display: inline-block; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, main,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -110,14 +108,6 @@ a:hover {
 /* ==========================================================================
    Typography
    ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
@@ -358,6 +348,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: visible;
+  color: inherit; }
+
 ul, p {
   margin: 0; }
 
@@ -393,14 +391,26 @@ img {
 body {
   padding-top: 10px;
   background: url("../images/blueberry-back.jpg") repeat;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  color: #434d6f; }
 
-.headlines {
+h1, h2, header, .headlines {
   font-family: "Lobster", cursive; }
+
+h1 {
+  color: #8a220c;
+  text-align: center;
+  font-size: 2em;
+  width: 26em;
+  margin: 0 auto; }
 
 section {
   margin: 0 10px;
-  background-color: #fff9df; }
+  background-color: #fff9df;
+  padding: 20px 0; }
+
+strong {
+  color: #8a220c; }
 
 .clear:after {
   content: ".";
@@ -413,6 +423,19 @@ section {
   color: #fff9df; }
   .control a {
     color: #fff9df; }
+
+.good-button, .buy-good-button, .info-good-button {
+  width: 204px;
+  height: 70px;
+  padding: 0 3em;
+  padding-bottom: 10px;
+  margin-bottom: -10px; }
+
+.buy-good-button {
+  background-image: url(../images//red-button.png); }
+
+.info-good-button {
+  background-image: url(../images//blue-button.png); }
 
 /* -------------------------------------- *\
     $LAYOUT
@@ -458,17 +481,18 @@ section {
   background: url("../images//divisor-down.png") repeat-x;
   background-color: #fff9df; }
 
-header {
+.header {
   border-radius: 5px;
   padding: 2px 10px 0;
   background: url("../images//red-texture.jpg") repeat; }
-
-.title {
-  font-size: 32px;
-  left: 50px;
-  color: #8a220c;
-  padding-right: 20px;
-  margin-top: 93px; }
+  .header h1 {
+    font-size: 32px;
+    left: 50px;
+    color: #8a220c;
+    padding-right: 20px;
+    margin-top: 93px;
+    width: 26em;
+    text-align: left; }
 
 /** Ribbon */
 .ribbon {
@@ -524,7 +548,11 @@ header {
   z-index: 2;
   padding: 10px 6px 0;
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #fff9df;
+  font-family: "PT Sans", sans-serif; }
+  .sublogo a {
+    color: inherit; }
 
 /**	video lady section */
 .carousel {
@@ -535,7 +563,7 @@ header {
 
 .video {
   padding-top: 25px;
-  padding-bottom: 100px; }
+  padding-bottom: 180px; }
 
 .video-lady {
   margin-left: 10px; }
@@ -550,7 +578,8 @@ header {
   .lady-speech p {
     text-align: center;
     margin-top: 0.5em;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: #434d6f; }
 
 .videos {
   position: absolute;
@@ -558,3 +587,166 @@ header {
   top: 160px; }
   .videos img {
     margin-bottom: 23px; }
+
+.feedback {
+  padding-top: 50px; }
+
+.laced {
+  background: url(../images//pattern-back.png) repeat; }
+
+.laced:before {
+  content: "";
+  display: block;
+  height: 13px;
+  background-repeat: no-repeat;
+  position: relative;
+  background: url("../images//divisor-up.png") repeat-x;
+  background-color: #fff9df; }
+
+.laced:after {
+  content: "";
+  display: block;
+  height: 13px;
+  background-repeat: no-repeat;
+  position: relative;
+  background: url("../images//divisor-down.png") repeat-x;
+  background-color: #fff9df; }
+
+.catalog .buttons {
+  margin: 0 auto;
+  width: 27em;
+  color: #fff9df; }
+  .catalog .buttons .info-good-button {
+    float: left; }
+  .catalog .buttons .buy-good-button {
+    float: right; }
+
+.bonuses {
+  padding: 0 10px;
+  text-align: center; }
+  .bonuses .bonus {
+    display: inline-block;
+    text-align: center;
+    width: 24.6%;
+    height: 195px;
+    vertical-align: top;
+    margin: 20px 0; }
+    .bonuses .bonus img {
+      display: inline-block; }
+    .bonuses .bonus div {
+      min-height: 135px; }
+
+.faq article {
+  margin: 60px 90px;
+  min-height: 358px;
+  text-align: center; }
+  .faq article header {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #8a220c; }
+  .faq article img, .faq article button, .faq article .answer-bubble, .faq article .question-bubble {
+    position: absolute; }
+  .faq article img, .faq article button {
+    bottom: 0; }
+  .faq article .question {
+    left: 0; }
+  .faq article .answer {
+    right: 0; }
+  .faq article .question-bubble, .faq article .answer-bubble {
+    background-size: cover; }
+  .faq article .question-bubble {
+    background-image: url(../images//faq/bubble.png);
+    padding-top: 16px;
+    width: 200px;
+    height: 132px;
+    left: 130px; }
+  .faq article .answer-bubble {
+    background-image: url(../images//faq/answer-bubble.png);
+    padding: 0 15px;
+    padding-top: 22px;
+    width: 244px;
+    height: 144px;
+    right: 194px;
+    bottom: 40px; }
+  .faq article button {
+    left: 28%;
+    width: 235px;
+    height: 48px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 10px;
+    background-image: url(../images//faq/button.png);
+    color: #fff9df; }
+  .faq article button.order {
+    background-image: url(../images//faq/order-button.png); }
+.faq .question1 .question-bubble {
+  width: 200px;
+  height: 132px;
+  left: 130px; }
+.faq .question1 .answer-bubble {
+  width: 244px;
+  height: 144px;
+  right: 194px;
+  bottom: 40px; }
+.faq .question2 .question-bubble {
+  width: 263px;
+  height: 172px;
+  left: 130px;
+  padding-top: 40px;
+  top: 40px; }
+.faq .question2 .answer-bubble {
+  width: 206px;
+  height: 122px;
+  right: 194px;
+  bottom: 40px;
+  padding-top: 26px; }
+.faq .question3 .question-bubble {
+  width: 299px;
+  height: 199px;
+  left: 110px;
+  padding: 46px 26px 9px 20px; }
+.faq .question3 .answer-bubble {
+  width: 246px;
+  right: 194px;
+  bottom: 40px;
+  padding-top: 36px; }
+.faq .question4 .question-bubble {
+  width: 219px;
+  height: 146px;
+  left: 130px;
+  padding-top: 29px; }
+.faq .question4 .answer-bubble {
+  width: 219px;
+  height: 129px;
+  right: 224px;
+  bottom: 40px;
+  padding-top: 30px; }
+
+.finish img {
+  display: inline-block;
+  float: left;
+  display: inline-block;
+  margin-left: 45px; }
+.finish button {
+  color: #fff9df;
+  padding-left: 47px;
+  padding-right: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 45px;
+  width: 135px;
+  background-image: url(../images//faq/footer-up.png); }
+
+.final-advise {
+  background-image: url(../images//faq/faq-final.png);
+  background-size: cover;
+  display: inline-block;
+  margin-left: 30px;
+  width: 529px;
+  height: 193px;
+  padding-left: 160px;
+  padding-top: 43px;
+  font-size: 1.5em;
+  color: #434d6f; }
