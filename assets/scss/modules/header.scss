@@ -5,28 +5,24 @@ $nav-height: $nav-visual-height + $nav-top-shadow-height + $nav-bottom-shadow-he
 
 $divider-height:  33px;
 
-header {
-	background-color: green;
+$img-header-path: #{$img-path}/header;
+
+.header-content {
+	background: url(#{$img-path}/pattern-back.png) repeat;
 
 	nav {
-		height: $nav-height;
-		margin-top: -$nav-top-shadow-height;
-		margin-bottom: -$nav-bottom-shadow-height;
-		position: relative;
-		width: 100%;
-		background: url('../images/middle-ribbon-small.png') repeat-x;
 
 		ul {
 			line-height: $nav-visual-height + 10px; //FIXME: why 10px ?
-			left: 10px;
-			font-family: 'PT Sans Caption', sans-serif;
+			left: 30px;
+			font-family: $caption-copy;
 			text-transform: uppercase;
 			font-size: 13px;
 			text-shadow: -2px -2px rgba(0,0,0,0.26);
 			
 			li:after {
 				content: "";
-				background-image: url("../images/header/divider.png");
+				background-image: url("#{$img-header-path}/ribbon/divider.png");
 				display: inline-block;
 				width: 3px;
 				height: 33px;
@@ -38,16 +34,71 @@ header {
 			li:last-child:after {
 				content: none;
 			}
+
+			li {
+				display: inline;
+			}
 		}
 	}
 }
 
-nav li {
-	display: inline;
+.header-top-lace {
+	height: 17px;
+	background: url('#{$img-path}/divisor-up.png') repeat-x;
+}
+
+.header-bottom-lace {
+	height: 17px;
+	background: url('#{$img-path}/divisor-down.png') repeat-x;	
+	background-color: $white;
+}
+
+header {
+	border-radius: 5px;
+	padding: 2px $content-padding 0;
+	background: url('#{$img-path}/red-texture.jpg') repeat;	
 }
 
 
+.title {
+	font-size: 32px;
+	left: 50px;
+	color: $red;
+	padding-right: 20px;
+	margin-top: 93px;
+}
+
+/** Ribbon */
+	.ribbon {
+		height: $nav-height;
+		margin-top: -$nav-top-shadow-height;
+		margin-bottom: -$nav-bottom-shadow-height;
+		width: 100%;
+		background: url('#{$img-header-path}/ribbon/middle.png') repeat-x;
+
+	}
+
+	.ribbon:after {
+		@include pseudo-base(94px);
+		top: 0;
+		right: -105px;
+		width: 159px;
+		position: absolute;
+		background-image: url('#{$img-header-path}/ribbon/right.png');
+	}
+
+	.ribbon:before {
+		@include pseudo-base(94px);
+		left: -105px;
+		width: 151px;
+		position: absolute;
+
+		background-image: url('#{$img-header-path}/ribbon/left.png');
+	}
+
 .logo {
+	left: 20px;
+	top: -10px;
 	float: left;
 	width: 268px;
 	height: 268px;
@@ -55,20 +106,22 @@ nav li {
 	margin-left: -47px; // left shadow
 	margin-top: -9px; // top shadow
 	margin-bottom: -8px; // bottom shadow
-	background: url('../images/logo.png');
+	background: url('#{$img-header-path}/logo.png');
 	z-index: 2;
 }
 
 .sublogo {
+	right: 15px;
 	float: right;
 	width: 163px;
 	height: 140px;
 	margin: -3px; // shadow around
 
-	background: url('../images/sublogo.png');
+	background: url('#{$img-header-path}/sublogo.png');
 	z-index: 2;
-	padding-top: 10px;
-	padding-left: 24px;
+	padding: 10px 6px 0;
+	text-align: center;
+	font-size: 14px;
 }
 
 

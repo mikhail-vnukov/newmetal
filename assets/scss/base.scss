@@ -29,12 +29,18 @@
 }
 
 body {
+	padding-top: 10px;
 	background: url('../images/blueberry-back.jpg') repeat;
-	font-family: 'PT Sans', sans-serif;
+	font-family: $body-copy;
 }
 
-.content {
-	background: #fff9df;
+.headlines {
+	font-family: $title-copy;
+}
+
+section {
+	margin: 0 $content-padding;
+	background-color: $white;
 }
 
 .clear:after {

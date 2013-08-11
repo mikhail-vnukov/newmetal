@@ -4,5 +4,6 @@
 
 .content {
 	margin: 0 auto;
-	width: 959px;
+	width: $content-width + $content-padding*2;
+;
 }

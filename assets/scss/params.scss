@@ -1,1 +1,19 @@
 $white: #fff9df;
+$red: #8a220c;
+
+$content-width: 960px;
+$content-padding: 10px;
+
+$caption-copy: "PT Sans Caption", sans-serif;
+$title-copy: "Lobster", cursive;
+$body-copy: "PT Sans", sans-serif;
+
+$img-path: "../images/";
+
+@mixin pseudo-base($height) {
+    content: "";
+    display: block;
+    height: $height;
+    background-repeat: no-repeat;
+    position: relative;
+}

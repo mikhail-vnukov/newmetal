@@ -2,11 +2,9 @@
 /**	video lady section */
 .carousel {
 	width: auto;
-	height: 50px;
-	background-color: blue;
-}
-.video-lady {
-	height: 120px;
-	background-color: orange;
-	width: auto;
+	padding-top: 25px;
+
+	img {
+		margin: 0 auto;
+	}
 }
