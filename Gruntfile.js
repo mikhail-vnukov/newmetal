@@ -54,7 +54,14 @@ module.exports = function(grunt) {
 		    src: ['<%= meta.js %>/vendor/*.js', '<%= meta.js %>/*.js'],
 		    dest: 'js/main.js'
 		  }
-		}
+		},
+		autoprefixer: {
+			dist: {
+				files: {
+					'<%= meta.deployPath %>main.prefixed.css' : '<%= meta.deployPath %>main.css'
+				}
+			}
+		},
 		 
 	});
 	 
@@ -63,8 +70,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+
 
 	// Default task.
-	grunt.registerTask('default', ['sass', 'concat', 'uglify']);
+	grunt.registerTask('default', ['sass', 'concat', 'uglify', 'autoprefixer']);
 	 
 };

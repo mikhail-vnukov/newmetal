@@ -1,22 +1,112 @@
 .feedback {
 	padding-top: 50px;
+	text-align: center;
+	transition: none;
+
+	h1 {
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	.prev, .next {
+		position: absolute;
+		top: 50%;
+		width: 30px;
+		height: 30px;
+	}
+	.prev {
+		left: 5px;
+		background-image: url('#{$img-path}/feedbacks/prev.png');
+	}
+
+	.next {
+		right: 5px;
+		background-image: url('#{$img-path}/feedbacks/next.png');
+	}
+
+
+	.pagination {
+		text-align: center;
+	}
+	.pagination a {
+		background: url('#{$img-path}/feedbacks/pager.png');
+		width: 15px;
+		height: 15px;
+		margin: 0 5px 0 0;
+		display: inline-block;
+	}
+	.pagination a.selected {
+		background: url('#{$img-path}/feedbacks/selected-pager.png');
+		cursor: default;
+	}
+	.pagination a span {
+		display: none;
+	}
+
 }
-
-.laced {
-	background: url(#{$img-path}/pattern-back.png) repeat;
-
+.caroufredsel_wrapper {
+	display: inline-block;
+	transition: none;
 }
+.feedbacks-roundabout {
+	display: inline-block;
+	text-align: center;
+	width: 50em;
+	height: 27em;
+	transition: none;
 
-.laced:before {
-	@include pseudo-base(13px);
-	background: url('#{$img-path}/divisor-up.png') repeat-x;
-	background-color: $white;
+	h2, h3, span, a {
+		color: $red;
+	}
 
-}
+	h2 {
+		background-color: #eee5c5;
+		font-family: $body-copy; 
+		font-size: (20 / 14)+em;
+		text-align: center;
+		padding: (12 / 14)+em 0;
+		margin-bottom: (15 / 16)+em;
+		box-shadow: 3px 4px 4px rgba(0,0,0,0.4);
+	}
 
-.laced:after {
-	@include pseudo-base(13px);
+	h3 {
+		transition: none;
+		margin-top: 5px;
+	}
+	a {
+		text-decoration: underline;
+	}
+	img {
+		width: 100%;
+		transition: none;
+	}
 
-	background: url('#{$img-path}/divisor-down.png') repeat-x;	
-	background-color: $white;
+	p {
+		transition: none;
+	}
+
+	address {
+		margin-top: 10px;
+
+	}
+
+	li {
+		border: 4px white solid;
+		vertical-align: middle;
+		display: inline-block;
+		width: (350/14)+em;
+		padding: 10px;
+		transition: none;
+		font-size: (14/16)+em;
+		margin: 0 1px;
+		background: $white;
+	}
+
+	li.small {
+		font-size: ((14/16)/2.4)+em;
+		transition: none;
+
+	}
+
+
 }

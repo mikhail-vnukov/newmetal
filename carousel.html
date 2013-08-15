@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'> 
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Caption&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	<script src="http://localhost:35729/livereload.js"></script>
+
+	<script type="text/javascript" language="javascript" src="js/main.js"></script>
+
+	<style type="text/css">
+	.list_carousel {
+		background-color: #ccc;
+		margin: 0 0 30px 60px;
+		/*width: 1900px;*/
+
+		overflow: hidden;
+	}
+	.list_carousel li > div {
+		width: 10em;
+		height: 10em;
+	}
+	.list_carousel li.small > div {
+		font-size: 0.5em;
+	}
+	.list_carousel ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: block;
+	}
+	.list_carousel li {
+		font-size: 40px;
+		color: #999;
+		text-align: center;
+		background-color: #eee;
+		border: 5px solid #999;
+		padding: 0;
+		margin: 6px;
+		display: block;
+		float: left;
+	}
+	.list_carousel.responsive {
+		width: auto;
+		margin-left: 0;
+	}
+	.clearfix {
+		float: none;
+		clear: both;
+	}
+	.prev {
+		float: left;
+		margin-left: 10px;
+	}
+	.next {
+		float: right;
+		margin-right: 10px;
+	}
+	</style>
+
+</head>
+<body style="color: white">
+	<div class="list_carousel">
+		<ul id="foo2">
+			<li class="small">
+				<div >
+					<h3>1</h3>
+					<p>A concept that in many fields refers to a quantity without bound or end.</p>
+				</div>
+			<li>
+				<div>
+					<h3>2</h3>
+					<p>An excursion in which the final destination is the same as the starting point.</p>
+				</div>
+			<li class="small">
+				<div class="small">
+					<h3>3</h3>
+					<p>jQuery  is a cross-browser JavaScript library designed to simplify the client-side scripting.</p>
+				</div>
+			<li>
+				<div class="small">
+					<h3>4</h3>
+					<p>A carousel is an amusement ride consisting of a rotating circular platform with seats.</p>
+				</div>
+			</ul>
+
+		<div class="clearfix"></div>
+		<a id="prev2" class="prev" href="#">&lt;</a>
+		<a id="next2" class="next" href="#">&gt;</a>
+		<div id="pager2" class="pager"></div>
+	</div>
+
+<script type="text/javascript">
+$(function() {
+	$('#foo2').carouFredSel({
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		items: {
+			visible: 3,
+		},
+		scroll: {
+			items: 1,
+			fx: "none",
+			onBefore: function( data ) {
+				setTimeout(function() {
+					data.items.visible.eq( 0 ).addClass('small');
+					data.items.visible.eq( 1 ).removeClass('small');
+					data.items.visible.eq( 2 ).addClass('small');
+				}, 0);
+			}
+		}
+	});
+
+});
+
+</script>
+</body>
+</html>

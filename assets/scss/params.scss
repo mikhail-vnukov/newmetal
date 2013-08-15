@@ -11,6 +11,7 @@ $body-copy: "PT Sans", sans-serif;
 
 $img-path: "../images/";
 
+$base-size: 16;
 @mixin pseudo-base($height) {
     content: "";
     display: block;

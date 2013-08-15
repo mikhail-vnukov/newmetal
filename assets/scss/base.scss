@@ -16,15 +16,10 @@
 }
 
 * {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition:    all 0.2s ease;
-  -ms-transition:     all 0.2s ease;
-  -o-transition:      all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 * { 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
   box-sizing: border-box; 
 }
 
@@ -95,3 +90,23 @@ strong {
 }
 
 
+.laced {
+	background: url(#{$img-path}/pattern-back.png) repeat;
+
+}
+
+.laced:before {
+	@include pseudo-base(13px);
+	background: url('#{$img-path}/divisor-up.png') repeat-x;
+	background-color: $white;
+
+}
+
+
+
+.laced:after {
+	@include pseudo-base(13px);
+
+	background: url('#{$img-path}/divisor-down.png') repeat-x;	
+	background-color: $white;
+}

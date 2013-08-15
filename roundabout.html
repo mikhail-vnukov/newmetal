@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'> 
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Caption&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+
+	<script src="http://localhost:35729/livereload.js"></script>
+<!-- 
+	<script src="http://fredhq.com/lib/js/libraries/jquery.js"></script>
+ -->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	
+<!-- 
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ -->
+	<script type="text/javascript" src="http://fredhq.com/lib/js/projects/roundabout/jquery.roundabout2.js"></script>
+	<style>
+	   .roundabout-holder {
+	      list-style: none;
+	      padding: 0;
+	      margin: 0;
+	      height: 35em;
+	      width: 35em;
+	   }
+	   .roundabout-moveable-item {
+	      height: 14em;
+	      width: 14em;
+	      cursor: pointer;
+	      background-color: #ccc;
+	      border: 1px solid #999;
+	   }
+	   .roundabout-in-focus {
+	      cursor: auto;
+	   }
+	</style>
+<body>
+
+
+	<ul>
+	   <li>1</li>
+	   <li>2</li>
+	   <li>3</li>
+	   <li>4</li>
+	   <li>5</li>
+	</ul>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('ul').roundabout();
+		});
+	</script>
+	
+	
+</body>
+</html>

@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="http://localhost:35729/livereload.js"></script>
-
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<div class="content">
@@ -55,6 +55,107 @@
 		<section class="feedback">
 			<div class="laced">
 				<h1>Отзывы реальных клиентов:</h1>
+
+				<ul id="feedbacks-roundabout" class="feedbacks-roundabout">
+					<li class="small">
+						<h2>“ В первые дни я был... ”</h2>
+						<img src="images/feedbacks/client2.jpg">
+						<h3>Михаил Ильясов, студент,<br/> г. Санкт-Петербург</h3>
+						<p>“На самом деле в первые дни не мог разобраться 
+							ну и соответственно люди не верили мне. 
+							Пару дней тренеровок и научился после чего 
+							<a class="more" href="javascript:void(0);">лесенка окупилась в течении 3-ех дней” ...</a>
+						</p>
+						<p class="full-text">
+							- Будете ли советовать  нас вашим друзьям и знакомым? 
+							(”Нева-Аттракцион”)
+
+							- По большей части да, так как тема интересная, 
+							буду рекомендовать вас (Михаил)
+						</p>
+						<address>
+							<span>телефон:</span> 8 963 312 77 12<br/>
+							<span>vk.com:</span> http://vk.com/hh_im
+						</address>
+					</li>	
+					<li>
+						<h2>“ Ну все, думал  - приплыли! ”</h2>
+						<img src="images/feedbacks/client1.jpg">
+						<h3>Владимир Бобров, 21 год, предприниматель,<br/> г. Санкт-Петербург</h3>
+						<p>“Первые 20-30 клиентов было очень страшно!
+							Думал все, приплыли, реально казалось что провесит 
+							каждый и придется отдавать по 1000 рублей. 
+							Когда на подходе уже 40 клиент страх уходит 
+							<a class="more" href="javascript:void(0);">и начинается ажиотаж=)” ...</a>
+						</p>
+						<address>
+							<span>телефон:</span> 8 963 312 77 12<br/>
+							<span>vk.com:</span> http://vk.com/hh_im
+						</address>
+					</li>	
+					<li class="small">
+						<h2>“ Но на самом деле... ”</h2>
+
+						<img src="images/feedbacks/client3.jpg">
+						<h3>Ян Гайнцев, 25 лет, специалист по недвижимости,<br/> г. Старый Оскол</h3>
+						<p>“ Случайным образом узнал о данном аттракционе, 
+							рассказали друзья. Все думал, стоит ли покупать? 
+							И все же решил попробовать так как слышал , 
+							<a class="more" href="javascript:void(0);">что заработок хороший” ...</a>
+						</p>
+						<p class="full-text">
+
+						</p>
+						<address>
+							<span>телефон:</span> 8 981 753 40 57<br/>
+							<span>vk.com:</span> http://vk.com/id6178871
+						</address>
+
+					</li>	
+					<li class="small">
+						<h2>“ Все так хорошо начиналось, но в итоге... ”</h2>
+						<img src="images/feedbacks/client4.jpg">
+						<h3>Севак Бабелян, студент,<br/> г. Москва</h3>
+						<p>“ Преобрел турник лето 2013 и на второй день сдал его 
+							в аренду на 2 недели и тут же окупил его . Так как цена 
+							за аредну <a class="more" href="javascript:void(0);">была равно стоимости турника =)” ...</a>
+						</p>
+
+						<p class="full-text">
+
+						</p>
+						<address>
+							<span>vk.com:</span> http://vk.com/sevak_90
+						</address>
+
+					</li>	
+					<li class="small">
+						<h2>“ И тут я столкнулся с проблемой... ”</h2>
+						<img src="images/feedbacks/client5.jpg">
+						<h3>Евгений Воронов, студент,  предприниматель,<br/> г. Санкт-Петербург</h3>
+						<p>“ Встали на невском проспекте и турник окупили 
+							за один день ! На точке стоял сам лично, так как мне 
+							нравилась та обстановка которая царила вокруг 
+							аттракциона. <a class="more" href="javascript:void(0);">Дальше больше”  ...</a>
+						</p>
+						
+						<p class="full-text">
+
+						</p>
+						<address>
+							<span>телефон:</span> 8 911 730 11 05<br/>
+							<span>vk.com:</span> http://vk.com/evgeniy_voronovss
+						</address>
+
+					</li>	
+				</ul>
+
+
+				<div class="clearfix"></div>
+				<a id="prev2" class="prev" href="#"></a>
+				<a id="next2" class="next" href="#"></a>
+				<div id="pager" class="pagination"></div>
+
 			</div>
 
 		</section>
@@ -197,6 +298,36 @@
 			</div>
 		</section>
 		<footer></footer>
+	</div>
+
+
+
+	<div class="md-modal md-effect-1" id="modal-1">
+	    <div class="md-content">
+
+			<h2>“ Ну все, думал  - приплыли! ”</h2>
+			<img src="images/feedbacks/client1.jpg">
+			<h3>Владимир Бобров, 21 год, предприниматель,<br/> г. Санкт-Петербург</h3>
+			<p>“Первые 20-30 клиентов было очень страшно!
+				Думал все, приплыли, реально казалось что провесит 
+				каждый и придется отдавать по 1000 рублей. 
+				Когда на подходе уже 40 клиент страх уходит 
+				<a class="more" href="javascript:void(0);">и начинается ажиотаж=)” ...</a>
+			</p>
+			<p class="full-text">
+				Вставали без четкого видения и понимание прибыли. 
+				Так сказать на ура. К счастью это " Ура " оправдалось 
+				и оправдывается до сих пор! На самом деле деньги 
+				не совсем легкие , так как стоять и мотивировать 
+				людей к попытке дело очень энерго затратное. 
+				Первое время дико стеснялся =) потом разошелся 
+				и даже очень хорошо вошел в роль! ”
+			</p>
+			<address>
+				<span>телефон:</span> 8 963 312 77 12<br/>
+				<span>vk.com:</span> http://vk.com/hh_im
+			</address>
+		</div>
 	</div>
 </body>
 </html>
