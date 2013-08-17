@@ -1,10 +1,19 @@
 .catalog {
 
+	h1 {
+		//TODO: dupplication
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
 	.buttons {
 		margin: 0 auto;
 		width: 27em;
 		color: $white;
-		
+		left: 380px;
+		position: absolute;
+		bottom: 71px;
+
 		.info-good-button {
 			float: left;
 		}
@@ -14,5 +23,77 @@
 		}
 	}
 
+
+	.good-main, .good {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+	.good-main {
+		padding: 0 20px;
+
+		width: 244px;
+		height: 680px;
+		background: url(#{$img-path}/goods/goods-main.png);
+	}
+
+	.good {
+		padding: 0 10px;
+
+		width: 215px;
+		height: 504px;
+		background: url(#{$img-path}/goods/good.png);	
+	}
+
+	.goods {
+
+		text-align: justify;
+		font-size: (12/16)+em;
+		.border, {
+			display: inline-block;
+		}
+
+		.good-content {
+			background-color: #efefee;
+			padding: 6px;
+			line-height: 1.2em;
+		}
+
+		h2 {
+			font-size: (22/12)+em;	
+			margin-top: 20px;
+			text-align: center;
+			margin-bottom: 41px;		
+		}
+
+		img {
+			margin-bottom: 10px;
+			width: 100%;
+		}
+
+		strong {
+			font-size: (14/12)+em;
+			font-weight: bold;
+		}
+		button {
+			width: 124px;
+			height: 45px;
+			background: url(#{$img-path}/goods/button.png);	
+			font-size: (14/12)+em;
+			line-height: 0.8em;
+			left: 50%;
+			margin-left: -62px;
+			margin-top: 10px;
+		}
+		ul {
+			list-style-position: inside;
+		}
+	}
+
+	.goods:after {
+		width: 100%;
+		content: "";
+		display: inline-block;
+	}
 
 }
