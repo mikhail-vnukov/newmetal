@@ -1,0 +1,76 @@
+.submenu {
+
+	@extend section;
+
+	padding-bottom: 0;
+	margin-bottom: -15px;
+
+	p {
+		float: left;
+		vertical-align: top;
+		left: -10px;
+		margin-right: -1px;
+
+	}
+
+	overflow-x: visible;
+	white-space: nowrap;
+
+	color: $white;
+	line-height: 44px;
+
+	font-family: $title-copy;
+	font-size: (22/16)+em;
+	a {
+		color: $white;
+		text-decoration: underline;
+		font-family: $body-copy;
+		font-size: 1em;
+	}
+
+}
+
+.body-submenu {
+	background: url('#{$img-path}/submenu/body.png') repeat-x;
+	height: 44px;
+	padding-left: 1.5em;
+	width: 500px;
+
+	z-index: 3;
+
+}
+.head-submenu {
+	background-image: url('#{$img-path}/submenu/head.png');
+	height: 44px;
+	width: 18px;
+	z-index: 2;
+
+}
+
+.tail-submenu {
+	background-image: url('#{$img-path}/submenu/tail.png');
+	height: 66px;
+	width: 216px;
+	margin-top: -23px;
+	z-index: 2;
+	padding-top: 23px;
+}
+
+
+
+.submenu.submenu-right {
+	p {
+		float: right;	
+		left: 10px;
+	}
+
+	.tail-submenu {
+		background-image: url('#{$img-path}/submenu/tail-right.png');
+		padding-left: 150px;
+		z-index: 3;
+	}
+	
+	.head-submenu {
+		background-image: url('#{$img-path}/submenu/head-right.png');
+	}
+}

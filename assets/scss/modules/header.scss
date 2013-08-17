@@ -10,34 +10,31 @@ $img-header-path: #{$img-path}/header;
 .header-content {
 	background: url(#{$img-path}/pattern-back.png) repeat;
 
-	nav {
+	ul {
+		line-height: $nav-visual-height + 10px; //FIXME: why 10px ?
+		left: 30px;
+		font-family: $caption-copy;
+		text-transform: uppercase;
+		font-size: 13px;
+		text-shadow: -2px -2px rgba(0,0,0,0.26);
+		
+		li:after {
+			content: "";
+			background-image: url("#{$img-header-path}/ribbon/divider.png");
+			display: inline-block;
+			width: 3px;
+			height: 33px;
+			margin: 0 9px;
+			vertical-align: middle;
 
-		ul {
-			line-height: $nav-visual-height + 10px; //FIXME: why 10px ?
-			left: 30px;
-			font-family: $caption-copy;
-			text-transform: uppercase;
-			font-size: 13px;
-			text-shadow: -2px -2px rgba(0,0,0,0.26);
-			
-			li:after {
-				content: "";
-				background-image: url("#{$img-header-path}/ribbon/divider.png");
-				display: inline-block;
-				width: 3px;
-				height: 33px;
-				margin: 0 9px;
-				vertical-align: middle;
+		}
 
-			}
+		li:last-child:after {
+			content: none;
+		}
 
-			li:last-child:after {
-				content: none;
-			}
-
-			li {
-				display: inline;
-			}
+		li {
+			display: inline;
 		}
 	}
 }
