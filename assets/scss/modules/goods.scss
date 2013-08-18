@@ -1,0 +1,195 @@
+.ab-header {
+	img {
+		float: left;
+	}
+	h1, h2 {
+		padding-left: 360px;
+		text-align: left;
+		top: -25px;
+	}
+
+	h1 {
+		color: white;
+		font-size: (36/16)+em;
+	}
+
+	h2 {
+		font-size: (24/16)+em;	
+		left: -105px;
+	}
+
+	h3 {
+		width: 630px;
+		float: right;
+		font-family: $body-copy;
+		font-size: 1em;
+		font-style: italic;
+	}
+}
+
+.header-content {
+	height: 190px;
+}
+
+.sense:before {
+	content: "";
+	display:block;
+}
+.sense {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 70px;
+
+	header {
+		font-size: (24/16)+em;
+		color: $red;
+		margin: 1.5em 0;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	.sense-content, .video {
+		display: block;
+	}
+
+	.sense-content {
+		width: (524/16)+em;
+
+	}
+
+	.video  {
+		float: right;
+	}
+}
+
+.smile {
+	display: inline;
+}
+
+/** monetization */
+
+	.way, .monetization-bonus {
+		text-align: left;
+	}
+	.way {
+		float: left;
+		width: 300px;
+	}
+
+	.monetization-bonus {
+		width: 450px;
+		float: right;
+	}
+
+	.monetization {
+		margin: 30px 20px 20px;
+		text-align: center;
+		img {
+			margin-top: 10px;
+			display: inline;
+		}
+
+		strong {
+			color: $orange;
+		}
+	}
+
+.monetizations {
+	h3 {
+		text-align: center;
+		font-size: (24/16)+em;
+		color: $red;
+		font-weight: bold;
+	}	
+}
+
+.sets {
+	text-align: justify;
+
+	h2, h3, span, a {
+		color: $orange;
+	}
+
+	h2 {
+		background-color: #eee5c5;
+		font-family: $body-copy; 
+		font-size: (20 / 14)+em;
+		text-align: center;
+		padding: (12 / 14)+em 0;
+		margin-bottom: (15 / 16)+em;
+		box-shadow: 3px 4px 4px rgba(0,0,0,0.4);
+	}
+
+	h3 {
+		margin-top: 5px;
+	}
+	a {
+		text-decoration: underline;
+	}
+	img {
+		width: 100%;
+	}
+
+	article {
+		border: 4px white solid;
+		vertical-align: top;
+		width: 440px;
+		margin: 0 19px;
+		display: inline-block;
+		padding: 10px;
+		transition: none;
+		font-size: (14/16)+em;
+		background-color: $gray;
+	}
+
+	ul {
+		list-style-position: inside;
+	}
+
+	button {
+		margin-top: 2em;
+	}
+}
+
+.sets:after {
+	width: 100%;
+	content: "";
+	display: inline-block;
+}
+
+
+.finish {
+	img {
+		float: left;
+		display: inline-block;
+		margin-left: 45px;
+	}
+	.final-advise {
+		background-image: url(../images//faq/faq-final.png);
+		background-size: cover;
+		display: inline-block;
+		margin-left: 30px;
+		width: 529px;
+		height: 193px;
+		padding-left: 160px;
+		padding-top: 43px;
+		font-size: 1.5em;
+		color: #434d6f;
+	}
+
+	button {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
+
+	.back {
+		left: 64%;
+	}
+
+	.conditions {
+		left: 30%;
+	}
+}

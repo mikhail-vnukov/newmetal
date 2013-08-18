@@ -54,19 +54,17 @@ $img-header-path: #{$img-path}/header;
 	border-radius: 5px;
 	padding: 2px $content-padding 0;
 	background: url('#{$img-path}/red-texture.jpg') repeat;	
-
-	h1 {
-		font-size: 32px;
-		left: 50px;
-		color: $red;
-		padding-right: 20px;
-		margin-top: 93px;
-		width: 26em;
-		text-align: left;
-	}
-
 }
 
+.main-title {
+	font-size: 32px;
+	left: 50px;
+	color: $red;
+	padding-right: 20px;
+	margin-top: 93px;
+	width: 26em;
+	text-align: left;
+}
 
 
 /** Ribbon */
@@ -95,6 +93,14 @@ $img-header-path: #{$img-path}/header;
 		position: absolute;
 
 		background-image: url('#{$img-header-path}/ribbon/left.png');
+	}
+
+	.static-ribbon {
+		height: 90px;
+		width: 1170px;
+		padding: 24px;
+		left: -105px;
+		background-image: url('#{$img-header-path}/ribbon/ribbon.png');	
 	}
 
 .logo {

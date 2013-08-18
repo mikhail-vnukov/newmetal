@@ -23,7 +23,9 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'<%= meta.deployPath %>main.css': '<%= meta.scss %>main.scss'
+					'<%= meta.deployPath %>main.css': '<%= meta.scss %>main.scss',
+					'<%= meta.deployPath %>ab-main.css': '<%= meta.scss %>ab-main.scss'
+
 				}
 			}
 		},

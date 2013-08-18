@@ -108,3 +108,19 @@ strong {
 	background: url('#{$img-path}/divisor-down.png') repeat-x;	
 	background-color: $white;
 }
+
+button {
+	left: 28%;
+	width: 235px;
+	height: 48px;
+	padding-bottom: 2px;
+	padding-left: 50px;
+	padding-right: 10px;
+	background-image: url(#{$img-path}/faq/button.png);
+	color: $white;
+}
+
+button.order {
+	background-image: url(#{$img-path}/faq/order-button.png);
+
+}
