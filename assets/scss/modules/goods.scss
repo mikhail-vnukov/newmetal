@@ -94,6 +94,13 @@
 		strong {
 			color: $orange;
 		}
+
+
+		.point {
+			float: left;
+			margin-right: 15px;
+		}
+
 	}
 
 .monetizations {
@@ -114,12 +121,15 @@
 
 	h2 {
 		background-color: #eee5c5;
-		font-family: $body-copy; 
 		font-size: (20 / 14)+em;
 		text-align: center;
 		padding: (12 / 14)+em 0;
 		margin-bottom: (15 / 16)+em;
 		box-shadow: 3px 4px 4px rgba(0,0,0,0.4);
+	}
+
+	.mini {
+		color: $blue;
 	}
 
 	h3 {
