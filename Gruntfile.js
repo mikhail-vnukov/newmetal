@@ -24,7 +24,10 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'<%= meta.deployPath %>main.css': '<%= meta.scss %>main.scss',
-					'<%= meta.deployPath %>ab-main.css': '<%= meta.scss %>ab-main.scss'
+					'<%= meta.deployPath %>ab-main.css': '<%= meta.scss %>ab-main.scss',
+					'<%= meta.deployPath %>turnik-main.css': '<%= meta.scss %>turnik-main.scss',
+					'<%= meta.deployPath %>maugli-main.css': '<%= meta.scss %>maugli-main.scss'
+
 
 				}
 			}
