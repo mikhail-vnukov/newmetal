@@ -109,7 +109,8 @@ strong {
 	background-color: $white;
 }
 
-button {
+button, .fingered-button {
+	line-height: 48px;
 	width: 235px;
 	height: 48px;
 	padding-bottom: 2px;
@@ -119,7 +120,9 @@ button {
 }
 
 .fingered-button {
+	// padding-top: 12px;
 	padding-left: 50px;
+	display: block;
 }
 
 button.order {

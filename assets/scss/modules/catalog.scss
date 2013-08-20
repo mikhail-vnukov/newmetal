@@ -75,7 +75,8 @@
 			font-size: (14/12)+em;
 			font-weight: bold;
 		}
-		button {
+		.details-button {
+			display: block;
 			width: 124px;
 			height: 45px;
 			background: url(#{$img-path}/goods/button.png);	
@@ -84,7 +85,11 @@
 			left: 50%;
 			margin-left: -62px;
 			margin-top: 10px;
+			color: $red;
+			padding: 10px;
+			text-align: center;
 		}
+
 		ul {
 			list-style-position: inside;
 		}
