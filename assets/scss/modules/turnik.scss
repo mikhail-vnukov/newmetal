@@ -1,3 +1,7 @@
+b {
+	color: $red;
+}
+
 .ab-header {
 	img {
 		float: left;
@@ -14,22 +18,42 @@
 	}
 
 	h2 {
+		color: $blue;
 		font-size: (24/16)+em;	
 		left: -105px;
 	}
 
 	h3 {
 		width: 630px;
+		padding-right: 20px;
 		float: right;
 		font-family: $body-copy;
 		font-size: 1em;
 		font-style: italic;
 	}
+	
+	b {
+		color: $blue;
+	}
 }
-
 .header-content {
 	height: 190px;
 }
+
+.big-image {
+		display: inline-block;
+	}
+	.small-images {
+		display: inline-block;
+		width: 0;
+		vertical-align: top;
+	}
+	.small-image {
+		margin: 0 2px 10px 10px;
+		display: block;
+	}
+
+
 
 .sense:before {
 	content: "";
@@ -68,42 +92,32 @@
 	display: inline;
 }
 
-/** monetization */
+.advantages-list {
+	width: 590px;
+	padding-right: 20px;
+	float: left;
+	padding-left: 10px;
 
-	.way, .monetization-bonus {
-		text-align: left;
+	img {
+		float: left;
+		display: block;
+		width: 45px;
 	}
+
 	.way {
 		float: left;
-		width: 300px;
+		width: 500px;
+		margin-bottom: 30px;
+		margin-left: 10px;
 	}
-
-	.monetization-bonus {
-		width: 450px;
-		float: right;
-	}
-
-	.monetization {
-		margin: 30px 20px 20px;
-		text-align: center;
-		img {
-			margin-top: 10px;
-			display: inline;
-		}
-
-		strong {
-			color: $orange;
-		}
-	}
-
-.monetizations {
-	h3 {
-		text-align: center;
-		font-size: (24/16)+em;
-		color: $red;
-		font-weight: bold;
-	}	
 }
+
+.advantages-support {
+	.element {
+		margin-bottom: 20px;
+	}
+}
+
 
 .sets {
 	text-align: justify;
@@ -114,7 +128,6 @@
 
 	h2 {
 		background-color: #eee5c5;
-		font-family: $body-copy; 
 		font-size: (20 / 14)+em;
 		text-align: center;
 		padding: (12 / 14)+em 0;

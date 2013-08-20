@@ -110,14 +110,16 @@ strong {
 }
 
 button {
-	left: 28%;
 	width: 235px;
 	height: 48px;
 	padding-bottom: 2px;
-	padding-left: 50px;
 	padding-right: 10px;
 	background-image: url(#{$img-path}/faq/button.png);
 	color: $white;
+}
+
+.fingered-button {
+	padding-left: 50px;
 }
 
 button.order {
