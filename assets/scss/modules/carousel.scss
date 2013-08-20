@@ -7,4 +7,80 @@
 	img {
 		margin: 0 auto;
 	}
+
+
+	#slider {
+		width: 901px;
+		height: 319px;
+	}
+
+	.anythingSlider-default.activeSlider .anythingControls a {
+		background-color: #7C9127;
+	}
+
+	.anythingSlider-default.activeSlider .anythingWindow {
+		border-color: #464646;
+	}
+	/* Navigation buttons, active state */
+	.anythingSlider-default.activeSlider .anythingControls a {
+		/* background image = top shadow */
+		background-color: #464646;
+	}
+	/* Navigation current & hovered button, active state */
+	.anythingSlider-default.activeSlider .anythingControls a.cur,
+	.anythingSlider-default.activeSlider .anythingControls a:hover {
+		/* background image removed */
+		background: #ca591f;
+	}
+
+
+	/**********************************/
+
+	.carousel-item {
+		background: url(#{$img-path}/pattern-back.png) repeat;
+	}
+
+	.slideinfo {
+		width: 228px;
+		height: 319px;
+		display: inline-block;
+	}
+
+	.slideinfo h2 {
+		color: #ca591f;
+		font-family: $title-copy;
+		margin: 10px;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	.slideimg {
+		float: left;
+		display: block;
+	}
+
+	.slidelist {
+		padding-left: 20px;
+		color: #8a220c;
+		font-family: "PT Sans", sans-serif;
+	
+	}
+
+	.slidelist li {
+		margin-bottom: 10px;
+		list-style-position: inside;
+	}
+
+	.slideinfo button {
+		width: 124px;
+		height: 45px;
+		background: url(#{$img-path}/goods/button.png);
+		font-size: 0.9em;
+		line-height: 1em;
+		/*left: 50%;*/
+		margin-left: 50px;
+		margin-top: 10px;
+		color: #8a220c;
+		font-weight: bold;
+	}
 }

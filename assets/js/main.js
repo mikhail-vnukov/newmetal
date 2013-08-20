@@ -28,5 +28,14 @@
 			$("#modal-1").toggleClass("md-show");
 		});
 
-	})
+	});
+
+	$(function(){
+		$('#slider').anythingSlider({
+			buildStartStop: false,
+			autoPlay: true,
+			stopAtEnd: false
+		});
+	});
+
 })(jQuery);

@@ -89,7 +89,11 @@ b {
 .smile {
 	display: inline;
 }
-
+.advantages {
+	h1 {
+		margin: 20px auto;
+	}
+}
 .advantages-list {
 	width: 590px;
 	padding-right: 20px;
@@ -207,4 +211,8 @@ b {
 	.conditions {
 		left: 30%;
 	}
+}
+
+.anythingSlider {
+	float: right;
 }
