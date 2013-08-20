@@ -198,7 +198,7 @@
 							<b>Разрешение от Ростехнадзора: </b><br/>
 							Не требуется 
 						</p>
-						<button>подробности и видео</button>
+						<a class="details-button" href="angry-birds.html">подробности и видео</a>
 					</div>
 
 				</div>
@@ -219,7 +219,7 @@
 							Не требуется 
 							<br/><br/>
 						</p>
-						<button>подробности и видео</button>
+						<a class="details-button" href="turnik.html">подробности и видео</a>
 					</div>
 
 				</div>
@@ -240,7 +240,7 @@
 							Не требуется 
 							<br/><br/>
 						</p>
-						<button>подробности и видео</button>
+						<a class="details-button" href="maugli.html">подробности и видео</a>
 					</div>
 
 				</div>
@@ -388,10 +388,33 @@
 					Звоните нам <strong>8 800 876 76 76 - </strong><br/>
 					<strong>бесплатно</strong> со всех телефонов РФ
 				</div>
-				<button class="up">наверх</button>
+				<a class="up fingered-button" href="index.html">наверх</a>
 			</div>
 		</section>
 		<footer></footer>
+	</div>
+
+	<div id="application-form" title="Форма заявки">
+		<p class="validateTips"></p>
+
+		<form class="consultation" action="index.php" method="post">
+			<div class="modal-input-group">
+				<label class="required-label">Имя</label>
+				<input name="name" class="requiredField" type="text" />
+			</div>
+			<div class="modal-input-group">
+				<label class="required-label">E-mail</label>
+				<input name="email" class="email requiredField" type="text" />
+			</div>
+			<div class="modal-input-group">
+				<label class="required-label">Телефон</label>
+				<input name="phone" class="requiredField" type="text" />
+			</div>
+			
+			<input type="hidden" name="submitted" id="submitted" value="true" />
+			<input type="hidden" name="application" id="application" value="true" />
+
+		</form>
 	</div>
 </body>
 </html>
