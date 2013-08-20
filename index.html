@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="http://localhost:35729/livereload.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+
 </head>
 <body>
 	<div class="content">
@@ -290,7 +292,7 @@
 				<div class="border"></div>
 			</div>
 			<div class="buttons clear">
-				<button class="info-good-button">заказать online</button>
+				<button class="order-online info-good-button">заказать online</button>
 				<button class="buy-good-button">посмотреть весь каталог</button>
 			</div>
 		</section>
@@ -420,7 +422,7 @@
 					закажите онлайн
 				</div>
 
-				<button class="order">заказать on-line</button>
+				<button class="order order-online ">заказать on-line</button>
 				<img class="answer" src="images/faq/logo.png"></img>
 
 			</article>
@@ -436,5 +438,80 @@
 		</section>
 		<footer></footer>
 	</div>
+
+<!-- Invisible sections  -->
+	<div class="md-modal md-effect-13" id="order-form"  >
+		<div class="md-content">
+			<h3>Форма заказа</h3>
+			<form method="post" action="send.php">
+				<div class="input-group">
+					<label>Имя</label> <input required name="name" type="text"></input>
+				</div>
+				<div class="input-group">
+					<label>Телефон</label> <input required name="phone" type="text"></input>
+				</div>
+				<div class="input-group">
+					<label>Email</label> <input required name='email' type="text"></input>
+				</div>
+				<div>
+					<label>Модель</label>
+					<select id="model" name="model">
+					  <option value="ab-big">angry birds (big)</option>
+					  <option value="ab-small">angry birds (small)</option>
+					  <option value="turnik-standard">Турник „Стандарт” </option>
+					  <option value="turnik-leto">Турник „Лето - 2013”</option>
+					  <option value="maugli">Пьяная лестница</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label>Вопросы и комментарии</label>
+					<textarea name="comment"></textarea>
+				</div>
+				<input type="hidden" name="submitted" id="submitted" value="true" />
+
+				<div class="form-controls">
+					<input id="submit-button" class='submit-button' type="submit" value="Отправить"></input>
+					<button class="md-close">Закрыть!</button>
+				</div>
+			</form>	 
+		</div>
+	</div>
+
+	<div class="md-modal md-effect-13" id="faq-form">
+		<div class="md-content">
+			<h3>Modal Dialog</h3>
+			<form class="form-template">
+				<div class="input-group">
+					<label>Имя</label> <input name="name" type="text"></input>
+				</div>
+				<div class="input-group">
+					<label>Телефон</label> <input name="phone" type="text"></input>
+				</div>
+				<div class="input-group">
+					<label>Email</label> <input name='email' type="text"></input>
+				</div>
+				<div>
+					<label>Тема</label>
+					<select multiple id="theme" name="theme">
+					  <option value="chosing">Выбор аттракциона</option>
+					  <option value="law">Юридические тонкости и полиция</option>
+					  <option value="delivery">Вопросы по доставке</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label>Вопросы и комментарии</label>
+					<textarea name="comment"></textarea>
+				</div>
+				<div class="form-controls">
+					<input class='submit-button' type="submit" value="Отправить"></input>
+					<button class="md-close">Закрыть!</button>
+				</div>
+			</form>	 
+		</div>
+	</div>
+	<button class="md-trigger" data-modal="modal-5">Newspaper</button>
+	 
+	<div class="md-overlay"> </div>
+
 </body>
 </html>

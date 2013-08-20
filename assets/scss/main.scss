@@ -43,6 +43,10 @@
 /* -------------------------------------- *\
     $MODULES
 \* -------------------------------------- */
+@import "vendor/anythingslider";
+@import "vendor/modal";
+
+
 @import "modules/header";
 @import "modules/carousel";
 @import "modules/video";
@@ -51,7 +55,7 @@
 @import "modules/bonuses";
 @import "modules/faq";
 @import "modules/submenu";
+@import "modules/form";
 
 
-@import "vendor/anythingslider";
 

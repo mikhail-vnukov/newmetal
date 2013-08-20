@@ -118,9 +118,19 @@ b {
 	}
 }
 
+.advantages {
+	.anythingSlider {
+		float: right;
+		margin: 20px 20px 20px auto;
+	}
+}
 
 .sets {
 	text-align: justify;
+
+	h1 {
+		margin: 20px 0;
+	}
 
 	h2, h3, span, a {
 		color: $orange;
@@ -207,8 +217,3 @@ b {
 	}
 }
 
-
-.anythingSlider {
-	float: right;
-	margin: 20px 20px 20px auto;
-}
