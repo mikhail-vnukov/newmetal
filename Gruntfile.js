@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 		},
 		concat: {
 		  js: {
-		    src: ['<%= meta.js %>/vendor/*.js', '<%= meta.js %>/modules/*.js', '<%= meta.js %>/*.js'],
+		    src: ['<%= meta.js %>/vendor/jquery-1.10.2.js', '<%= meta.js %>/vendor/*.js', '<%= meta.js %>/modules/*.js', '<%= meta.js %>/*.js'],
 		    dest: 'js/main.js'
 		  }
 		},

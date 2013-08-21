@@ -43,10 +43,13 @@
 /* -------------------------------------- *\
     $MODULES
 \* -------------------------------------- */
+@import "vendor/modal";
+
 @import "modules/header";
 @import "modules/bonuses"; 
 @import "modules/goods-common";
 @import "modules/turnik";
+@import "modules/form";
 
 @import "vendor/lightbox";
 @import "vendor/anythingslider";

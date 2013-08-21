@@ -6,7 +6,7 @@
 
     if(isset($_POST['submitted'])) {
 
-        if (!isset($_POST['name']) && !isset($_POST['phone']) && !isset($_POST['email'])) {
+        if (!isset($_POST['phone']) && !isset($_POST['email'])) {
             header('HTTP/1.1 400 Bad Request', true, 400);
             exit;
         }
@@ -16,7 +16,7 @@
         $phone = trim($_POST['phone']);
         $email = trim($_POST['email']);
 
-        if (($name === '') && ($phone === '') && ($email === '')) {
+        if (($phone === '') && ($email === '')) {
             header('HTTP/1.1 400 Bad Request', true, 400);
             exit;
         }

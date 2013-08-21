@@ -17,7 +17,7 @@
 		$email = trim($_POST['email']);
 
 
-		if (($name === '') && ($phone === '') && ($email === '')) {
+		if (($phone === '') && ($email === '')) {
 			header('HTTP/1.1 400 Bad Request', true, 400);
 			exit;
 		}

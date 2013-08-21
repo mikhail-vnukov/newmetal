@@ -25,10 +25,12 @@
 
 				<nav class="ribbon">
 					<ul class="control">
-						<li><a href="index.html">Каталог/Цены</a></li>
-						<li><a href="index.html">Оптовые продажи</a></li>
-						<li><a href="index.html">Аренда/Сотрудничество</a></li>
-						<li><a href="index.html">Контакты</a></li>
+						<li>
+							<a href="#catalog">Каталог/Цены</a>
+						</li>
+						<li><a href="javascript:void();" onclick="openWholesale(); return false;">Оптовые продажи</a></li>
+						<li><a href="javascript:void();" onclick="openRent(); return false;">Аренда/Сотрудничество</a></li>
+						<li><a href="javascript:void();" onclick="openContacts(); return false;">Контакты</a></li>
 					</ul>
 				</nav>
 				<h1 class="main-title">
@@ -49,9 +51,9 @@
 							<li><b>Доход в день - <br/> 
 							от 17 000 руб.</b></li>
 						</ul>
-						<button>смотрите<br/>
+						<a class="lookthere" href="angry-birds.html">смотрите<br/>
 								видео
-						</button>
+						</a>
 
 					</div>
 				</div>
@@ -67,9 +69,9 @@
 							<li><b>Доход в день - <br/> 
 							от 4 500 до&nbsp;22 000 руб.</b></li>
 						</ul>
-						<button>смотрите<br/>
+						<a class="lookthere" href="turnik.html">смотрите<br/>
 								видео
-						</button>
+						</a>
 
 					</div>
 				</div>
@@ -84,9 +86,9 @@
 						<li><b>Доход в день - <br/> 
 						от 5 000 руб.</b></li>
 						</ul>
-						<button>смотрите<br/>
+						<a class="lookthere" href="maugli.html">смотрите<br/>
 								видео
-						</button>
+						</a>
 					</div>
 				</div>
 			</li>
@@ -102,14 +104,15 @@
 				 </p>
 			</div>
 			<div class="videos">
-				<img class="mappet" src="images/video/mappet.jpg">
-				<img class="panda" src="images/video/panda.jpg">
+				<iframe width="400" height="225" src="//www.youtube.com/embed/EM3796Aixog?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</section>
 		<nav class='submenu clear'>
 			<p class="head-submenu"></p><!--
 		 --><p class="body-submenu">
-				<a href="">Аренда/сотрудничество</a>
+				<a href="javascript:void();" onclick="openRent(); return false;">
+					Аренда/сотрудничество
+				</a>
 				- Мы всегда готовы к диалогу!
 			</p><!-- 
 		 --><p class="tail-submenu"></p>
@@ -274,7 +277,7 @@
 			</div>
 
 		</section>
-		<section class="catalog">
+		<section class="catalog" id="catalog">
 			<h1>Ассортимент топовых аттракционов <br/>для БИЗНЕСА и отдыха</h1> 
 			<div class="goods">
 				<div class="border"></div>
@@ -354,8 +357,8 @@
 				<div class="border"></div>
 			</div>
 			<div class="buttons clear">
-				<button class="order-online info-good-button">заказать online</button>
-				<button class="buy-good-button">посмотреть весь каталог</button>
+				<button class="order-online buy-good-button">заказать online</button>
+				<button onclick="openRent();" class="info-good-button">аренда и сотрудничество</button>
 			</div>
 		</section>
 
@@ -409,7 +412,9 @@
 		 --><p class="tail-submenu">
  			 	Мы всегда готовы к диалогу!
 			 	&nbsp;&nbsp;
-				<a href="">Аренда/сотрудничество</a>
+				<a href="javascript:void();" onclick="openRent(); return false;">
+					Аренда/сотрудничество
+				</a>
 			</p>
 		</nav>
 		<section class="faq ">
@@ -499,9 +504,9 @@
 			</div>
 		</section>
 		
-		<footer class="footer">
-			<div class="topfooter">
-				<article>
+		<section class="footer">
+			<div class="tab-content">
+				<article class="tab-pane" id="arenda">
 					<h1>Полный ассортимент аттракционов в аренду</h1>
 					<h3>СПБ и Ленобласть</h3>
 					<h2>Аренда актуальна по следующим причинам:</h2>
@@ -566,8 +571,7 @@
 						</div>
 					</div>
 				</article>
-
-				<article>
+				<article class="tab-pane" id="wholesale">
 					<h1>Интересуют условия оптовых покупок?</h1>
 					<h3>Мы будем рады предоставить особые условия при заказе 2-х и более аттракционов</h3>
 				
@@ -608,7 +612,7 @@
 					</div>
 				</article>
 
-				<article>
+				<article class="tab-pane" id="contacts">
 					<h1>Контактная информация:</h1>
 					<h3>Работаем по всей России!</h3>
 					
@@ -662,7 +666,35 @@
 					</div>
 				</article>
 			</div>
-		</footer>
+		</section>
+
+		<nav class="foot-nav">
+			<ul class="nav nav-tabs">
+				<li><a href="#catalog">
+					<img src="images/footer/buttons/catalog.png" alt="Каталог и цены"/>
+				</a></li>
+				<li>
+					<a id="wholesale-tab" href="#wholesale" data-toggle="tab">
+						<img class="basic" src="images/footer/buttons/wholesale1.png" alt="Оптовые продажи"/>
+					</a>
+					<img class="alternative" src="images/footer/buttons/wholesale2.png" alt="Оптовые продажи"/>
+				</li>
+				<li>
+					<a id="arenda-tab" href="#arenda" data-toggle="tab">
+						<img class="basic" src="images/footer/buttons/rent1.png" alt="Аренда и сотрудничество">
+					</a>
+					<img class="alternative" src="images/footer/buttons/rent2.png" alt="Аренда и сотрудничество">
+				</li>
+				<li>
+					<a id="contact-tab" href="#contacts" data-toggle="tab">
+						<img class="basic" src="images/footer/buttons/contacts1.png" alt="Как нас найти"/>
+					</a>
+					<img class="alternative" src="images/footer/buttons/contacts2.png" alt="Как нас найти"/>
+				</li>
+			</ul>
+			
+		</nav>
+
 	</div>
 
 <!-- Invisible sections  -->
@@ -672,15 +704,15 @@
 			<div id="error-panel" class="error-panel">
 				Пожалуйста, проверьте правильность заполнения формы
 			</div>
-			<form method="post" action="send.php">
+			<form>
 				<div class="input-group">
-					<label>Имя</label> <input required name="name" type="text"></input>
+					<label>Имя</label> <input name="name" type="text"></input>
 				</div>
 				<div class="input-group">
-					<label>Телефон</label> <input required name="phone" type="text"></input>
+					<label>Телефон</label> <input name="phone" type="text"></input>
 				</div>
 				<div class="input-group">
-					<label>Email</label> <input required name='email' type="text"></input>
+					<label>Email</label> <input name='email' type="text"></input>
 				</div>
 				<div>
 					<label>Модель</label>
@@ -700,7 +732,7 @@
 
 				<div class="form-controls">
 					<input id="submit-button" class='submit-button' type="submit" value="Отправить"></input>
-					<button class="md-close">Закрыть</button>
+					<button type="reset" class="md-close">Закрыть</button>
 				</div>
 			</form>	 
 		</div>
@@ -712,7 +744,7 @@
 				Пожалуйста, проверьте правильность заполнения формы
 			</div>
 			<h3>Задайте вопрос или выберите интересующую тему</h3>
-			<form method="post" action="ask.php">
+			<form>
 				<div class="input-group">
 					<label>Имя</label> <input name="name" type="text"></input>
 				</div>
@@ -736,7 +768,7 @@
 				</div>
 				<div class="form-controls">
 					<input id="submit-button" class='submit-button' type="submit" value="Отправить"></input>
-					<button class="md-close">Закрыть</button>
+					<button type="reset" class="md-close">Закрыть</button>
 				</div>
 			</form>	 
 		</div>

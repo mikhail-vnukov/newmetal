@@ -31,17 +31,21 @@
 
 		chargeForm('#order-form', 'send.php', '.order-online');
 		chargeForm('#faq-form', 'ask.php', '.ask-question');
+
+		if (location.hash.indexOf('arenda') != -1) {
+			setTimeout(openRent, 0);
+		}
+
 	});
 
 	$(function(){
 		$('#slider').anythingSlider({
 			buildStartStop: false,
 			autoPlay: true,
-			stopAtEnd: false
+			stopAtEnd: false,
+			hashTags : false
 		});
 	});
-
-
 
 })(jQuery);
 

@@ -43,8 +43,11 @@
 /* -------------------------------------- *\
     $MODULES
 \* -------------------------------------- */
+@import "vendor/modal";
+
 @import "modules/header";
 @import "modules/bonuses";
+@import "modules/form";
 
 @import "modules/goods";
 @import "vendor/lightbox";

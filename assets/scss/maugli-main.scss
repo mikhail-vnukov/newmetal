@@ -43,10 +43,15 @@
 /* -------------------------------------- *\
     $MODULES
 \* -------------------------------------- */
+@import "vendor/modal";
+
 @import "modules/header";
 @import "modules/bonuses";
 @import "modules/maugli";
 @import "modules/goods-common";
+
+@import "modules/form";
+
 
 @import "vendor/lightbox";
 @import "vendor/anythingslider";

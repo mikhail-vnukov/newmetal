@@ -19,7 +19,7 @@
 	padding-left: 10px;
 }
 
-footer {
+.footer {
 	.item {
 		display: inline-block;
 		width: 49%;
@@ -34,6 +34,10 @@ footer {
 			padding-left: 70px;
 			vertical-align: top;
 		}
+	}
+
+	.tab-pane {
+		min-height: 520px;
 	}
 
 }
@@ -55,4 +59,63 @@ footer {
 	font-weight: bold;
 	color: $red;
 
+}
+
+.foot-nav {
+	background: url(#{$img-path}/footer/bg.png) repeat-x;
+	height: 145px;
+	background-color: transparent;
+	top: -10px;
+	width: 960px;
+	margin: 0 10px;
+	padding: 0;
+	border: none;
+
+	img {
+		display: inline-block;
+	}
+	ul {
+		padding: 0 60px;
+		text-align: justify;
+
+		li {
+			display: inline-block;
+			vertical-align: top;
+			float: none;
+
+			a {
+				display: inline-block;
+				width: 147px;
+				height: 124px;				
+
+				text-align: center;
+				vertical-align: top;
+				font-variant: small-caps;
+				font-weight: bold;
+			}
+
+
+			.alternative {
+				display: none;
+			}
+
+		}
+
+		.active {
+			a {
+				display: none;
+			}
+
+			.alternative {
+				display: inline-block; 
+			}
+		}
+
+	}
+
+	ul:after {
+		width: 100%;
+		content: "";
+		display: inline-block;
+	}
 }
