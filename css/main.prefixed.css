@@ -28,7 +28,7 @@
     $BASE
 \* -------------------------------------- */
 
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 
 /* ==========================================================================
    HTML5 display definitions
@@ -546,7 +546,7 @@ body {
   padding-top: 10px;
   background: url("../images/blueberry-back.jpg") repeat;
   font-family: "PT Sans", sans-serif;
-  color: #434d6f;
+  color: #2c0a03;
 }
 
 h1,
@@ -633,6 +633,26 @@ strong {
   background-color: #fff9df;
 }
 
+button,
+.fingered-button {
+  line-height: 48px;
+  width: 235px;
+  height: 48px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  background-image: url(../images//faq/button.png);
+  color: #fff9df;
+}
+
+.fingered-button {
+  padding-left: 50px;
+  display: block;
+}
+
+button.order {
+  background-image: url(../images//faq/order-button.png);
+}
+
 /* -------------------------------------- *\
     $LAYOUT
 \* -------------------------------------- */
@@ -698,7 +718,7 @@ strong {
   background: url("../images//red-texture.jpg") repeat;
 }
 
-.header h1 {
+.main-title {
   font-size: 32px;
   left: 50px;
   color: #8a220c;
@@ -741,6 +761,14 @@ strong {
   width: 151px;
   position: absolute;
   background-image: url("../images//header/ribbon/left.png");
+}
+
+.static-ribbon {
+  height: 90px;
+  width: 1170px;
+  padding: 24px;
+  left: -105px;
+  background-image: url("../images//header/ribbon/ribbon.png");
 }
 
 .logo {
@@ -787,7 +815,8 @@ strong {
   margin: 0 auto;
 }
 
-.video {
+section.video,
+.video.submenu {
   padding-top: 25px;
   padding-bottom: 180px;
 }
@@ -1024,7 +1053,8 @@ strong {
   font-weight: bold;
 }
 
-.catalog .goods button {
+.catalog .goods .details-button {
+  display: block;
   width: 124px;
   height: 45px;
   background: url(../images//goods/button.png);
@@ -1033,6 +1063,9 @@ strong {
   left: 50%;
   margin-left: -62px;
   margin-top: 10px;
+  color: #8a220c;
+  padding: 10px;
+  text-align: center;
 }
 
 .catalog .goods ul {
@@ -1048,6 +1081,8 @@ strong {
 .bonuses {
   padding: 0 10px;
   text-align: center;
+  font-weight: bold;
+  color: #434d6f;
 }
 
 .bonuses .bonus {
@@ -1127,19 +1162,9 @@ strong {
   bottom: 40px;
 }
 
-.faq article button {
+.faq button {
   left: 28%;
-  width: 235px;
-  height: 48px;
-  padding-bottom: 2px;
   padding-left: 50px;
-  padding-right: 10px;
-  background-image: url(../images//faq/button.png);
-  color: #fff9df;
-}
-
-.faq article button.order {
-  background-image: url(../images//faq/order-button.png);
 }
 
 .faq .question1 .question-bubble {
@@ -1207,7 +1232,7 @@ strong {
   margin-left: 45px;
 }
 
-.finish button {
+.finish .fingered-button {
   color: #fff9df;
   padding-left: 47px;
   padding-right: 12px;
@@ -1219,7 +1244,7 @@ strong {
   background-image: url(../images//faq/footer-up.png);
 }
 
-.final-advise {
+.finish .final-advise {
   background-image: url(../images//faq/faq-final.png);
   background-size: cover;
   display: inline-block;
