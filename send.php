@@ -39,8 +39,8 @@
 
 		// upon no failure errors let's email now!
 
-		// $emailTo = 'mikhail.vnukov@gmail.com';
-		$emailTo = 'russian-attraction@mail.ru';
+		$emailTo = 'mikhail.vnukov@gmail.com';
+		// $emailTo = 'russian-attraction@mail.ru';
 		$subject = 'Новая заявка: '.$email;
 		$body = "Имя: $name \r\nТелефон: $phone \r\nEmail: $email";
 
