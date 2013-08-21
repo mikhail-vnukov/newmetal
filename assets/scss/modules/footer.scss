@@ -1,0 +1,58 @@
+.footer h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: $red;
+	text-align: center;
+		margin-bottom: 30px;
+}
+
+.footer h2 {
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 1.5em;
+	color: #434d6f;
+	font-family: "Lobster", Georgia, serif;
+}
+
+.rent-list {
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+footer {
+	.item {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+		margin-bottom: 20px;
+		img {
+			display: block;
+			float: left;
+		}
+
+		.way {
+			padding-left: 70px;
+			vertical-align: top;
+		}
+	}
+
+}
+
+.reasons {
+	color: #ca591f;
+	font-weight: bold;
+}
+
+
+.callus {
+	text-align: center;
+	font-weight: bold;
+	color: $blue;
+}
+
+.ourphone {
+	text-align: center;
+	font-weight: bold;
+	color: $red;
+
+}
