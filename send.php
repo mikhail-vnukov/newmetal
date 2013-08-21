@@ -1,14 +1,26 @@
 <?php
-	ini_set('display_errors', 1);
-	error_reporting(E_ALL);
+	// ini_set('display_errors', 1);
+	// error_reporting(E_ALL);
 
 	// error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
 	if(isset($_POST['submitted'])) {
+
+		if (!isset($_POST['name']) && !isset($_POST['phone']) && !isset($_POST['email'])) {
+			header('HTTP/1.1 400 Bad Request', true, 400);
+			exit;
+		}
+
 		// require a name from user
 		$name = trim($_POST['name']);
 		$phone = trim($_POST['phone']);
 		$email = trim($_POST['email']);
+
+
+		if (($name === '') && ($phone === '') && ($email === '')) {
+			header('HTTP/1.1 400 Bad Request', true, 400);
+			exit;
+		}
 
 		// we need at least some content
 		if(isset($_POST['comments']) && trim($_POST['comments']) !== '') {
@@ -63,6 +75,8 @@
                	"Content-type: text/plain; charset=UTF-8" . "\r\n";
 
 		mail($emailTo, $subject, $body, $headers);
+
+
 
 		echo $emailTo;
 		echo $subject;

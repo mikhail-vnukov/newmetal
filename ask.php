@@ -19,6 +19,12 @@
 			}
 		}
 
+		if (isset($_POST['model'])) {
+			if(!(trim($_POST['model']) === '')) {
+				$model = trim($_POST['model']);
+			}
+		}
+
 		// upon no failure errors let's email now!
 
 		// $emailTo = 'mikhail.vnukov@gmail.com';

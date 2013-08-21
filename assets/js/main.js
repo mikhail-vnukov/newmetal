@@ -28,6 +28,9 @@
 			$("#modal-1").toggleClass("md-show");
 		});
 
+
+		chargeForm('#order-form', 'send.php', '.order-online');
+		chargeForm('#faq-form', 'ask.php', '.ask-question');
 	});
 
 	$(function(){
@@ -37,6 +40,7 @@
 			stopAtEnd: false
 		});
 	});
+
 
 
 })(jQuery);

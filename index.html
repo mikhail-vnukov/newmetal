@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="http://localhost:35729/livereload.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/form.js"></script>
 
 </head>
 <body>
@@ -26,10 +25,10 @@
 
 				<nav class="ribbon">
 					<ul class="control">
-						<li><a href="index.html">Каталог/Цены</a></li><!-- 
-					--><li><a href="index.html">Оптовые продажи</a></li><!-- 
-					--><li><a href="index.html">Аренда/Сотрудничество</a></li><!-- 
-					--><li><a href="index.html">Контакты</a></li>
+						<li><a href="index.html">Каталог/Цены</a></li>
+						<li><a href="index.html">Оптовые продажи</a></li>
+						<li><a href="index.html">Аренда/Сотрудничество</a></li>
+						<li><a href="index.html">Контакты</a></li>
 					</ul>
 				</nav>
 				<h1 class="main-title">
@@ -367,7 +366,7 @@
 					амбиций и географии 
 					проживания
 				</div>
-				<button>мы поможем выбрать</button>
+				<button class="ask-question">мы поможем выбрать</button>
 
 				<img class="answer" src="images/faq/logo.png"></img>
 
@@ -387,7 +386,7 @@
 					мы знаем оба!
 				</div>
 
-				<button>у нас есть ответ</button>
+				<button class="ask-question">у нас есть ответ</button>
 				<img class="answer" src="images/faq/logo.png"></img>
 
 			</article>
@@ -404,7 +403,7 @@
 					У нас БЕСПЛАТНАЯ доставка по РФ
 				</div>
 
-				<button>узнайте подробности</button>
+				<button class="ask-question">узнайте подробности</button>
 				<img class="answer" src="images/faq/logo.png"></img>
 
 			</article>
@@ -443,6 +442,9 @@
 	<div class="md-modal md-effect-13" id="order-form"  >
 		<div class="md-content">
 			<h3>Форма заказа</h3>
+			<div id="error-panel" class="error-panel">
+				Пожалуйста, проверьте правильность заполнения формы
+			</div>
 			<form method="post" action="send.php">
 				<div class="input-group">
 					<label>Имя</label> <input required name="name" type="text"></input>
@@ -471,7 +473,7 @@
 
 				<div class="form-controls">
 					<input id="submit-button" class='submit-button' type="submit" value="Отправить"></input>
-					<button class="md-close">Закрыть!</button>
+					<button class="md-close">Закрыть</button>
 				</div>
 			</form>	 
 		</div>
@@ -479,8 +481,11 @@
 
 	<div class="md-modal md-effect-13" id="faq-form">
 		<div class="md-content">
-			<h3>Modal Dialog</h3>
-			<form class="form-template">
+			<div id="error-panel" class="error-panel">
+				Пожалуйста, проверьте правильность заполнения формы
+			</div>
+			<h3>Задайте вопрос или выберите интересующую тему</h3>
+			<form method="post" action="ask.php">
 				<div class="input-group">
 					<label>Имя</label> <input name="name" type="text"></input>
 				</div>
@@ -503,8 +508,8 @@
 					<textarea name="comment"></textarea>
 				</div>
 				<div class="form-controls">
-					<input class='submit-button' type="submit" value="Отправить"></input>
-					<button class="md-close">Закрыть!</button>
+					<input id="submit-button" class='submit-button' type="submit" value="Отправить"></input>
+					<button class="md-close">Закрыть</button>
 				</div>
 			</form>	 
 		</div>
