@@ -15,25 +15,44 @@
 }
 
 .rent-list {
-width: 590px;
-padding-right: 20px;
-float: left;
-padding-left: 10px;
+	padding-right: 20px;
+	padding-left: 10px;
 }
 
-.topfooter {
+footer {
+	.item {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+		margin-bottom: 20px;
+		img {
+			display: block;
+			float: left;
+		}
+
+		.way {
+			padding-left: 70px;
+			vertical-align: top;
+		}
+	}
 
 }
 
-// .rent-list .way {
-// float: left;
-// width: 500px;
-// margin-bottom: 30px;
-// margin-left: 10px;
-// }
+.reasons {
+	color: #ca591f;
+	font-weight: bold;
+}
 
-.rents-list img {
-float: left;
-display: block;
-width: 45px;
+
+.callus {
+	text-align: center;
+	font-weight: bold;
+	color: $blue;
+}
+
+.ourphone {
+	text-align: center;
+	font-weight: bold;
+	color: $red;
+
 }
