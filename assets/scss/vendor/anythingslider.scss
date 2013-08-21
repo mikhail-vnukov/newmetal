@@ -38,7 +38,7 @@
 /* Navigation buttons + start/stop button, default state */
 .anythingSlider-default .anythingControls a {
 	/* top shadow */
-	background: #777 url(../images/default.png) center -288px repeat-x;
+	background: #777 url(#{$img-path}/default.png) center -288px repeat-x;
 	color: #fff9df;
 	border-radius: 0 0 5px 5px;
 	-moz-border-radius: 0 0 5px 5px;
@@ -127,20 +127,20 @@
 	margin: -15px 0 0 0; /* half height of image */
 	text-align: center;
 	outline: 0;
-	/*background: url(../images/default.png) no-repeat;*/
+	/*background: url(#{$img-path}/default.png) no-repeat;*/
 }
 
 /* back arrow */
 .anythingSlider-default .back { left: 0; }
 .anythingSlider-default .back a { 
-	background: url('../images/slider/arrow-left.png') no-repeat; 
+	background: url('#{$img-path}/slider/arrow-left.png') no-repeat; 
 }
 /*.anythingSlider-default .back a:hover,
 .anythingSlider-default .back a.hover { background-position: left -140px; }*/
 /* forward arrow */
 .anythingSlider-default .forward { right: 0; }
 .anythingSlider-default .forward a { 
-	background: url('../images/slider/arrow-right.png') no-repeat; 
+	background: url('#{$img-path}/slider/arrow-right.png') no-repeat; 
 }
 /*.anythingSlider-default .forward a:hover,
 .anythingSlider-default .forward a.hover { background-position: right -140px; }*/
