@@ -29,8 +29,11 @@ section.video {
 .videos {
 	position: absolute;
 
-	right: 35px;
-	top: 250px;
+	position: absolute;
+	right: 15px;
+	top: 150px;
+	width: 360px;
+
 	img {
 		margin-bottom: 23px;
 	}

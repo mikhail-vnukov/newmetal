@@ -128,14 +128,18 @@ $img-header-path: #{$img-path}/header;
 	z-index: 2;
 	padding: 10px 6px 0;
 	text-align: center;
-	font-size: 14px;
 
 	color: $white;
 	font-family: $body-copy;
+	font-size: 1.1em;
 
 	a {
 		color: inherit;
+		font-weight: bolder;
+	}
 
+	p { 
+		margin-top: 0.3em;
 	}
 }
 

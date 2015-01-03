@@ -20,6 +20,15 @@
 }
 
 .footer {
+	
+	address {
+		padding: 0 20px 0 90px;
+
+		iframe {
+			margin-top: 20px;
+		}
+	}
+
 	.item {
 		display: inline-block;
 		width: 49%;
@@ -117,14 +126,6 @@
 		width: 100%;
 		content: "";
 		display: inline-block;
-	}
-}
-
-address {
-	padding: 0 20px 0 90px;
-
-	iframe {
-		margin-top: 20px;
 	}
 }
 
